@@ -35,8 +35,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-# Spring Boot profile "local-dev" is to be customized for each developer
-# hence it should never be committed
-src/main/resources/application-local-dev.properties
-/src/local/my-dynamodb-data/shared-local-instance.db
