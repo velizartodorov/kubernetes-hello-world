@@ -1,4 +1,5 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-alpine
 VOLUME /tmp
-COPY target/kubernetes-hello-world.jar app.jar
-CMD [ "sh", "-c", "java -jar /app.jar" ]
+ARG JAR_FILE
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
