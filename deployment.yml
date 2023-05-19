@@ -1,20 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: springboot-kubernetes
+  creationTimestamp: null
+  labels:
+    app: default
+  name: default
 spec:
+  replicas: 1
   selector:
     matchLabels:
-      app: springboot-kubernetes
-  replicas: 3
+      app: default
+  strategy: {}
   template:
     metadata:
+      creationTimestamp: null
       labels:
-        app: springboot-kubernetes
+        app: default
     spec:
       containers:
-        - name: springboot-kubernetes
-          image: springboot-kubernetes:1.0
-          imagePullPolicy: Always
-          ports:
-            - containerPort: 8080
+      - image: hello-world-kubernetes:latest
+        name: hello-world-kubernetes
+        resources: {}
+status: {}
