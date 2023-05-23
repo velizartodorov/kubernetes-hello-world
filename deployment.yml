@@ -18,7 +18,7 @@ spec:
         app: default
     spec:
       containers:
-      - image: hello-world-kubernetes:latest
+      - image: 547892456789123678912345789421/hello-world-kubernetes:latest
         name: hello-world-kubernetes
         resources: {}
 status: {}

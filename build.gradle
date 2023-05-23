@@ -6,10 +6,10 @@ plugins {
     id 'com.google.cloud.tools.jib' version '3.3.2'
 }
 
+jib.to.image = 'hello-world-kubernetes:latest'
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
-jib.to.image = 'hello-world-kubernetes'
 
 repositories {
     mavenCentral()

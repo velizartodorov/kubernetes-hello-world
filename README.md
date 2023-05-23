@@ -29,7 +29,7 @@ jib.to.image = 'hello-world-kubernetes'
 ### 4. Run and map it to port 8080
 
 ```shell
-docker run -d -p8080:8080 hello-world-kubernetes:0.0.1-SNAPSHOT
+docker run -d -p8080:8080 hello-world-kubernetes
 ```
 
 ### 5. Open <http://localhost:8080/>
